@@ -1,0 +1,103 @@
+[
+  {
+    "label": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+    "input": {
+      "pele": "0",
+      "orelha": "0",
+      "mama": "0",
+      "mamilo": "0",
+      "pregas": "0"
+    },
+    "expected": {
+      "main": "29s 1d",
+      "raw": {
+        "dias": 204
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "pele": "0",
+      "orelha": "0",
+      "mama": "0",
+      "mamilo": "0",
+      "pregas": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+    "input": {
+      "pele": "10",
+      "orelha": "16",
+      "mama": "10",
+      "mamilo": "10",
+      "pregas": "15"
+    },
+    "expected": {
+      "main": "37s 6d",
+      "raw": {
+        "soma": 61,
+        "dias": 265
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "pele": "10",
+      "orelha": "16",
+      "mama": "10",
+      "mamilo": "10",
+      "pregas": "15"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+    "input": {
+      "pele": "10",
+      "orelha": "8",
+      "mama": "10",
+      "mamilo": "10",
+      "pregas": "15"
+    },
+    "expected": {
+      "main": "36s 5d",
+      "raw": {
+        "dias": 257
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "pele": "10",
+      "orelha": "8",
+      "mama": "10",
+      "mamilo": "10",
+      "pregas": "15"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+    "input": {
+      "pele": "20",
+      "orelha": "24",
+      "mama": "15",
+      "mamilo": "15",
+      "pregas": "20"
+    },
+    "expected": {
+      "main": "42s 4d",
+      "raw": {
+        "dias": 298
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "pele": "20",
+      "orelha": "24",
+      "mama": "15",
+      "mamilo": "15",
+      "pregas": "20"
+    },
+    "expandedZeroOptions": []
+  }
+]

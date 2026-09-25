@@ -1,0 +1,216 @@
+{
+  "tool": {
+    "id": "metodo-de-capurro",
+    "title": "Método de Capurro (somático)",
+    "short": "Idade gestacional do recém-nascido",
+    "spec": [
+      "pediatria",
+      "ginecologia-e-obstetricia"
+    ],
+    "desc": "Calcule a idade gestacional do recém-nascido pelo método de Capurro somático: textura da pele, orelha, glândula mamária, mamilo e pregas plantares.",
+    "lead": "Estima a idade gestacional do recém-nascido pelo exame físico, quando a datação obstétrica é desconhecida ou duvidosa.",
+    "fields": [
+      [
+        "pele",
+        "Textura da pele",
+        "sel",
+        {
+          "opts": {
+            "0": "Muito fina, gelatinosa",
+            "5": "Fina e lisa",
+            "10": "Algo mais grossa, discreta descamação superficial",
+            "15": "Grossa, rugas superficiais, descamação nas mãos e nos pés",
+            "20": "Grossa, apergaminhada, com gretas profundas"
+          }
+        }
+      ],
+      [
+        "orelha",
+        "Forma da orelha",
+        "sel",
+        {
+          "opts": {
+            "0": "Chata, disforme, pavilhão não encurvado",
+            "8": "Pavilhão parcialmente encurvado na borda",
+            "16": "Pavilhão parcialmente encurvado em toda a parte superior",
+            "24": "Pavilhão totalmente encurvado"
+          }
+        }
+      ],
+      [
+        "mama",
+        "Tamanho da glândula mamária",
+        "sel",
+        {
+          "opts": {
+            "0": "Não palpável",
+            "5": "Palpável, menor que 5 mm",
+            "10": "Entre 5 e 10 mm",
+            "15": "Maior que 10 mm"
+          }
+        }
+      ],
+      [
+        "mamilo",
+        "Formação do mamilo",
+        "sel",
+        {
+          "opts": {
+            "0": "Apenas visível, sem aréola",
+            "5": "Aréola lisa e chata, diâmetro menor que 7,5 mm",
+            "10": "Aréola pontilhada, borda não elevada, diâmetro menor que 7,5 mm",
+            "15": "Aréola pontilhada, borda elevada, diâmetro maior que 7,5 mm"
+          }
+        }
+      ],
+      [
+        "pregas",
+        "Pregas plantares",
+        "sel",
+        {
+          "opts": {
+            "0": "Sem pregas",
+            "5": "Marcas mal definidas na metade anterior",
+            "10": "Marcas bem definidas na metade anterior e sulcos no terço anterior",
+            "15": "Sulcos na metade anterior",
+            "20": "Sulcos em mais da metade anterior"
+          }
+        }
+      ]
+    ],
+    "formula": "<p><strong>Idade gestacional (dias) = 204 + soma dos pontos</strong> dos 5 sinais somáticos. Divida por 7 para obter semanas.</p><p>Capurro também descreveu uma forma somatoneurológica (constante 200, com sinais neurológicos); esta calculadora usa só a forma somática, que não depende do estado neurológico do recém-nascido.</p>",
+    "table": [
+      [
+        "Idade gestacional",
+        "Classificação"
+      ],
+      [
+        "&lt; 37 semanas",
+        "Pré-termo"
+      ],
+      [
+        "37s 0d a 41s 6d",
+        "Termo"
+      ],
+      [
+        "≥ 42 semanas",
+        "Pós-termo"
+      ]
+    ],
+    "tips": [
+      "O método de Capurro perde precisão em prematuros extremos (abaixo de cerca de 29 semanas, que é o mínimo da escala: 204 dias): nesses, prefira o New Ballard.",
+      "Examine nas primeiras horas de vida (idealmente até 48 horas): a pele descama e muda com o tempo, superestimando a idade.",
+      "Recém-nascidos pequenos para a idade gestacional podem ter sinais somáticos mais maduros ou menos maduros que a idade real; desnutrição intrauterina altera mama e pregas.",
+      "A datação obstétrica confiável (ultrassonografia do 1º trimestre) prevalece sobre o exame físico: use o Capurro quando ela não existir."
+    ],
+    "sources": [
+      [
+        "Capurro H et al. A simplified method for diagnosis of gestational age in the newborn infant. J Pediatr, 1978.",
+        "https://doi.org/10.1016/S0022-3476(78)80621-0"
+      ]
+    ],
+    "cases": [
+      [
+        "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        {
+          "pele": "0",
+          "orelha": "0",
+          "mama": "0",
+          "mamilo": "0",
+          "pregas": "0"
+        },
+        {
+          "main": "29s 1d",
+          "raw": {
+            "dias": 204
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        {
+          "pele": "10",
+          "orelha": "16",
+          "mama": "10",
+          "mamilo": "10",
+          "pregas": "15"
+        },
+        {
+          "main": "37s 6d",
+          "raw": {
+            "soma": 61,
+            "dias": 265
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        {
+          "pele": "10",
+          "orelha": "8",
+          "mama": "10",
+          "mamilo": "10",
+          "pregas": "15"
+        },
+        {
+          "main": "36s 5d",
+          "raw": {
+            "dias": 257
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        {
+          "pele": "20",
+          "orelha": "24",
+          "mama": "15",
+          "mamilo": "15",
+          "pregas": "20"
+        },
+        {
+          "main": "42s 4d",
+          "raw": {
+            "dias": 298
+          },
+          "level": "mid"
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}
