@@ -1,11 +1,11 @@
-/* tool-metodo-de-capurro · Elucenia · https://github.com/Elucenia/tool-metodo-de-capurro
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-metodo-de-capurro · ELUCENIA · https://github.com/Elucenia/tool-metodo-de-capurro
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"metodo-de-capurro","title":"Método de Capurro (somático)","fields":[["pele","Textura da pele","sel",{"opts":{"0":"Muito fina, gelatinosa","5":"Fina e lisa","10":"Algo mais grossa, discreta descamação superficial","15":"Grossa, rugas superficiais, descamação nas mãos e nos pés","20":"Grossa, apergaminhada, com gretas profundas"}}],["orelha","Forma da orelha","sel",{"opts":{"0":"Chata, disforme, pavilhão não encurvado","8":"Pavilhão parcialmente encurvado na borda","16":"Pavilhão parcialmente encurvado em toda a parte superior","24":"Pavilhão totalmente encurvado"}}],["mama","Tamanho da glândula mamária","sel",{"opts":{"0":"Não palpável","5":"Palpável, menor que 5 mm","10":"Entre 5 e 10 mm","15":"Maior que 10 mm"}}],["mamilo","Formação do mamilo","sel",{"opts":{"0":"Apenas visível, sem aréola","5":"Aréola lisa e chata, diâmetro menor que 7,5 mm","10":"Aréola pontilhada, borda não elevada, diâmetro menor que 7,5 mm","15":"Aréola pontilhada, borda elevada, diâmetro maior que 7,5 mm"}}],["pregas","Pregas plantares","sel",{"opts":{"0":"Sem pregas","5":"Marcas mal definidas na metade anterior","10":"Marcas bem definidas na metade anterior e sulcos no terço anterior","15":"Sulcos na metade anterior","20":"Sulcos em mais da metade anterior"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
