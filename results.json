@@ -1,0 +1,515 @@
+{
+  "at": "2026-10-05T15:24:39.313Z",
+  "id": "metodo-de-capurro",
+  "engine": {
+    "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+    "bytes": 6020,
+    "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+  },
+  "sourceParity": "Node current source / per-tool browser VM outputs match",
+  "cases": [
+    {
+      "id": "metodo-de-capurro",
+      "index": 0,
+      "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+      "input": {
+        "pele": "0",
+        "orelha": "0",
+        "mama": "0",
+        "mamilo": "0",
+        "pregas": "0"
+      },
+      "expected": {
+        "main": "29s 1d",
+        "raw": {
+          "dias": 204
+        },
+        "level": "mid"
+      },
+      "obtained": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "29s 1d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 0,
+          "dias": 204
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "29s 1d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 0,
+          "dias": 204
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "29s 1d",
+          "obtained": "29s 1d",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dias",
+          "expected": 204,
+          "obtained": 204,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.soma",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dias",
+          "expected": 204,
+          "obtained": 204,
+          "tolerance": 2.04e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "29s 1d",
+          "obtained": "29s 1d",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de idade gestacional",
+          "obtained": "de idade gestacional",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "metodo-de-capurro",
+      "index": 1,
+      "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+      "input": {
+        "pele": "10",
+        "orelha": "16",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "expected": {
+        "main": "37s 6d",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        },
+        "level": "low"
+      },
+      "obtained": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "37s 6d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "37s 6d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "37s 6d",
+          "obtained": "37s 6d",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.soma",
+          "expected": 61,
+          "obtained": 61,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dias",
+          "expected": 265,
+          "obtained": 265,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.soma",
+          "expected": 61,
+          "obtained": 61,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dias",
+          "expected": 265,
+          "obtained": 265,
+          "tolerance": 2.65e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "37s 6d",
+          "obtained": "37s 6d",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de idade gestacional",
+          "obtained": "de idade gestacional",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "metodo-de-capurro",
+      "index": 2,
+      "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+      "input": {
+        "pele": "10",
+        "orelha": "8",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "expected": {
+        "main": "36s 5d",
+        "raw": {
+          "dias": 257
+        },
+        "level": "mid"
+      },
+      "obtained": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "36s 5d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 53,
+          "dias": 257
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "36s 5d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 53,
+          "dias": 257
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "36s 5d",
+          "obtained": "36s 5d",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dias",
+          "expected": 257,
+          "obtained": 257,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.soma",
+          "expected": 53,
+          "obtained": 53,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dias",
+          "expected": 257,
+          "obtained": 257,
+          "tolerance": 2.57e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "36s 5d",
+          "obtained": "36s 5d",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de idade gestacional",
+          "obtained": "de idade gestacional",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "id": "metodo-de-capurro",
+      "index": 3,
+      "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+      "input": {
+        "pele": "20",
+        "orelha": "24",
+        "mama": "15",
+        "mamilo": "15",
+        "pregas": "20"
+      },
+      "expected": {
+        "main": "42s 4d",
+        "raw": {
+          "dias": 298
+        },
+        "level": "mid"
+      },
+      "obtained": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "42s 4d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 94,
+          "dias": 298
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "browserVm": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "42s 4d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 94,
+          "dias": 298
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "42s 4d",
+          "obtained": "42s 4d",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dias",
+          "expected": 298,
+          "obtained": 298,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.soma",
+          "expected": 94,
+          "obtained": 94,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dias",
+          "expected": 298,
+          "obtained": 298,
+          "tolerance": 2.98e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "42s 4d",
+          "obtained": "42s 4d",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de idade gestacional",
+          "obtained": "de idade gestacional",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "summary": {
+    "cases": 4,
+    "passed": 4,
+    "failed": 0,
+    "checks": 37
+  },
+  "newIndependentOracle": false,
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

@@ -1,0 +1,932 @@
+{
+  "receipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "build": {
+    "id": "RYDdJbZxqrM8sgoyKEQc-",
+    "standaloneServer": {
+      "file": "reports/review-20261005-completion/deploy-lock/r5-isolated-runtime/.next/standalone/server.js",
+      "sha256": "631d43264038e7aa367b5405041eb3706d73fd3366925a7ef17a07119cfa166e",
+      "bytes": 10457
+    },
+    "catalogPin": {
+      "file": "deliveries/elucenia-next-hostinger-r5/.next/server/pages/en/tools.json",
+      "sha256": "33917dfdae9bea59cae22bfca34eaef2a21046a832af98c1a8d2718075de63ec",
+      "bytes": 103793
+    }
+  },
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r5 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "tool": {
+    "id": "metodo-de-capurro",
+    "title": "Método de Capurro (somático)",
+    "methodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
+    "implementationVersion": "metodo-de-capurro@native-2026-10-03+f1ddb0fcf2e4",
+    "sources": [
+      [
+        "Capurro H et al. A simplified method for diagnosis of gestational age in the newborn infant. J Pediatr, 1978.",
+        "https://doi.org/10.1016/S0022-3476(78)80621-0"
+      ],
+      [
+        "Ministério da Saúde,AIDPI neonatal5ªedição,section5.1",
+        "https://bvsms.saude.gov.br/bvs/publicacoes/manual_AIDPI_neonatal_5ed.pdf"
+      ],
+      [
+        "Ministério da Saúde,professional neonatal guidevol1",
+        "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_recem_nascido_%20guia_profissionais_saude_v1.pdf"
+      ],
+      [
+        "Ministério da Saúde. Atenção à saúde do recém-nascido, v1, 2nd updated edition 2014, Quadro 11 PDF173 / printed172; official reproduction, not original1978 paper.",
+        "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_saude_recem_nascido_v1.pdf"
+      ]
+    ],
+    "limits": "Esta ferramenta implementa o Capurro somático, com cinco sinais físicos e constante 204, não a variante somatoneurológica. A orientação neonatal do Ministério da Saúde consultada descreve seu uso em recém-nascidos a partir de 29 semanas, especialmente quando a data menstrual não é conhecida. Não se presume desempenho em prematuros extremos abaixo dessa faixa. Os sinais exigem exame físico apropriado; uma orelha temporariamente achatada pela posição do parto não deve ser usada como se refletisse maturação. No Quadro 11 da orientação oficial do Ministério da Saúde, segunda edição atualizada de 2014, a opção de 10 pontos da formação do mamilo descreve diâmetro maior que 7,5 mm e borda não elevada. Esta é uma leitura da reprodução oficial, não uma revisão integral do artigo original de 1978. A correção do rótulo mantém o código e os 10 pontos; não valida o exame físico nem resolve limites de igualdade que a figura não explicita.",
+    "sourceEditionEvidence": [
+      {
+        "citation": "Capurro H et al. A simplified method for diagnosis of gestational age in the newborn infant. J Pediatr, 1978.",
+        "url": "https://doi.org/10.1016/S0022-3476(78)80621-0",
+        "class": "primary-publication-abstract-or-metadata-read",
+        "publicationEditionConfirmed": true,
+        "fullTextRetrieved": false,
+        "formulaConformance": "not-assessed",
+        "publication": {
+          "title": "A simplified method for diagnosis of gestational age in the newborn infant.",
+          "year": "1978",
+          "firstPublicationDate": "1978-07-01",
+          "doi": "10.1016/s0022-3476(78)80621-0",
+          "pmid": "650322",
+          "journal": "The Journal of pediatrics",
+          "authors": "Capurro H, Konichezky S, Fonseca D, Caldeyro-Barcia R."
+        },
+        "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/650322/",
+        "abstractAvailable": false,
+        "fullTextSha256": null,
+        "abstractSha256": null,
+        "matchedBy": "exact-DOI-or-PMID"
+      }
+    ],
+    "calculator": {
+      "file": "deliveries/elucenia-next-hostinger-r5/private/tool-code/metodo-de-capurro/calculator.js",
+      "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be",
+      "bytes": 6020
+    },
+    "cases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "results": [
+    {
+      "id": "metodo-de-capurro",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+      "originalInput": {
+        "pele": "0",
+        "orelha": "0",
+        "mama": "0",
+        "mamilo": "0",
+        "pregas": "0"
+      },
+      "input": {
+        "pele": "0",
+        "orelha": "0",
+        "mama": "0",
+        "mamilo": "0",
+        "pregas": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "main": "29s 1d",
+        "raw": {
+          "dias": 204
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "29s 1d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 0,
+          "dias": 204
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pele": "0",
+            "orelha": "0",
+            "mama": "0",
+            "mamilo": "0",
+            "pregas": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+          "startedAt": "2026-10-05T15:16:05.579Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "metodo-de-capurro",
+              "main": [
+                "29s 1d",
+                "de idade gestacional"
+              ],
+              "label": "Idade gestacional pelo método de Capurro somático",
+              "raw": {
+                "soma": 0,
+                "dias": 204
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "94c01dc88c2981b4b6c298fc10513b0d83b2b59f0e6bc1e16d193fb66169052c",
+          "bytes": 205,
+          "elapsedMs": 3.4464999999909196
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "startedAt": "2026-10-05T15:16:05.579Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "metodo-de-capurro",
+            "main": [
+              "29s 1d",
+              "de idade gestacional"
+            ],
+            "label": "Idade gestacional pelo método de Capurro somático",
+            "raw": {
+              "soma": 0,
+              "dias": 204
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "94c01dc88c2981b4b6c298fc10513b0d83b2b59f0e6bc1e16d193fb66169052c",
+        "bytes": 205,
+        "elapsedMs": 3.4464999999909196
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "29s 1d",
+            "obtained": "29s 1d",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dias",
+            "expected": 204,
+            "obtained": 204,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.soma",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dias",
+            "expected": 204,
+            "obtained": 204,
+            "tolerance": 2.04e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "29s 1d",
+            "obtained": "29s 1d",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de idade gestacional",
+            "obtained": "de idade gestacional",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "metodo-de-capurro",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+      "originalInput": {
+        "pele": "10",
+        "orelha": "16",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "input": {
+        "pele": "10",
+        "orelha": "16",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "amendments": [],
+      "expected": {
+        "main": "37s 6d",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "37s 6d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pele": "10",
+            "orelha": "16",
+            "mama": "10",
+            "mamilo": "10",
+            "pregas": "15"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+          "startedAt": "2026-10-05T15:16:05.894Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "metodo-de-capurro",
+              "main": [
+                "37s 6d",
+                "de idade gestacional"
+              ],
+              "label": "Idade gestacional pelo método de Capurro somático",
+              "raw": {
+                "soma": 61,
+                "dias": 265
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "188f91e51db839d6fad90bff2d3f1be5e3176fb8c0fb5f3974571aa08b779bc7",
+          "bytes": 206,
+          "elapsedMs": 4.096399999980349
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "startedAt": "2026-10-05T15:16:05.894Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "metodo-de-capurro",
+            "main": [
+              "37s 6d",
+              "de idade gestacional"
+            ],
+            "label": "Idade gestacional pelo método de Capurro somático",
+            "raw": {
+              "soma": 61,
+              "dias": 265
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "188f91e51db839d6fad90bff2d3f1be5e3176fb8c0fb5f3974571aa08b779bc7",
+        "bytes": 206,
+        "elapsedMs": 4.096399999980349
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "37s 6d",
+            "obtained": "37s 6d",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.soma",
+            "expected": 61,
+            "obtained": 61,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dias",
+            "expected": 265,
+            "obtained": 265,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.soma",
+            "expected": 61,
+            "obtained": 61,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dias",
+            "expected": 265,
+            "obtained": 265,
+            "tolerance": 2.65e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "37s 6d",
+            "obtained": "37s 6d",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de idade gestacional",
+            "obtained": "de idade gestacional",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "metodo-de-capurro",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+      "originalInput": {
+        "pele": "10",
+        "orelha": "8",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "input": {
+        "pele": "10",
+        "orelha": "8",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "amendments": [],
+      "expected": {
+        "main": "36s 5d",
+        "raw": {
+          "dias": 257
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "36s 5d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 53,
+          "dias": 257
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pele": "10",
+            "orelha": "8",
+            "mama": "10",
+            "mamilo": "10",
+            "pregas": "15"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+          "startedAt": "2026-10-05T15:16:06.203Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "metodo-de-capurro",
+              "main": [
+                "36s 5d",
+                "de idade gestacional"
+              ],
+              "label": "Idade gestacional pelo método de Capurro somático",
+              "raw": {
+                "soma": 53,
+                "dias": 257
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "14fc08b60b40d5df4efb2432980f5fb063a21f50b8357483f2750ea8bd7b0116",
+          "bytes": 206,
+          "elapsedMs": 2.2995999999984633
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "startedAt": "2026-10-05T15:16:06.203Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "metodo-de-capurro",
+            "main": [
+              "36s 5d",
+              "de idade gestacional"
+            ],
+            "label": "Idade gestacional pelo método de Capurro somático",
+            "raw": {
+              "soma": 53,
+              "dias": 257
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "14fc08b60b40d5df4efb2432980f5fb063a21f50b8357483f2750ea8bd7b0116",
+        "bytes": 206,
+        "elapsedMs": 2.2995999999984633
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "36s 5d",
+            "obtained": "36s 5d",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dias",
+            "expected": 257,
+            "obtained": 257,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.soma",
+            "expected": 53,
+            "obtained": 53,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dias",
+            "expected": 257,
+            "obtained": 257,
+            "tolerance": 2.57e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "36s 5d",
+            "obtained": "36s 5d",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de idade gestacional",
+            "obtained": "de idade gestacional",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "metodo-de-capurro",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+      "originalInput": {
+        "pele": "20",
+        "orelha": "24",
+        "mama": "15",
+        "mamilo": "15",
+        "pregas": "20"
+      },
+      "input": {
+        "pele": "20",
+        "orelha": "24",
+        "mama": "15",
+        "mamilo": "15",
+        "pregas": "20"
+      },
+      "amendments": [],
+      "expected": {
+        "main": "42s 4d",
+        "raw": {
+          "dias": 298
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "42s 4d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 94,
+          "dias": 298
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "pele": "20",
+            "orelha": "24",
+            "mama": "15",
+            "mamilo": "15",
+            "pregas": "20"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+          "startedAt": "2026-10-05T15:16:06.517Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "metodo-de-capurro",
+              "main": [
+                "42s 4d",
+                "de idade gestacional"
+              ],
+              "label": "Idade gestacional pelo método de Capurro somático",
+              "raw": {
+                "soma": 94,
+                "dias": 298
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "7e2759d72087bd700d564aa16d482fe68d92c5d29901ee879f88ddddbe504abc",
+          "bytes": 206,
+          "elapsedMs": 2.7840000000142027
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/metodo-de-capurro/calculate",
+        "startedAt": "2026-10-05T15:16:06.517Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "metodo-de-capurro",
+            "main": [
+              "42s 4d",
+              "de idade gestacional"
+            ],
+            "label": "Idade gestacional pelo método de Capurro somático",
+            "raw": {
+              "soma": 94,
+              "dias": 298
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "7e2759d72087bd700d564aa16d482fe68d92c5d29901ee879f88ddddbe504abc",
+        "bytes": 206,
+        "elapsedMs": 2.7840000000142027
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "42s 4d",
+            "obtained": "42s 4d",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dias",
+            "expected": 298,
+            "obtained": 298,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.soma",
+            "expected": 94,
+            "obtained": 94,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dias",
+            "expected": 298,
+            "obtained": 298,
+            "tolerance": 2.98e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "42s 4d",
+            "obtained": "42s 4d",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "de idade gestacional",
+            "obtained": "de idade gestacional",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "endBindings": true
+}

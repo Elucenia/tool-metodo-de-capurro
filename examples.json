@@ -1,20 +1,9 @@
 [
   {
-    "label": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
-    "input": {
-      "pele": "0",
-      "orelha": "0",
-      "mama": "0",
-      "mamilo": "0",
-      "pregas": "0"
-    },
-    "expected": {
-      "main": "29s 1d",
-      "raw": {
-        "dias": 204
-      },
-      "level": "mid"
-    },
+    "id": "metodo-de-capurro",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
     "originalInput": {
       "pele": "0",
       "orelha": "0",
@@ -22,10 +11,49 @@
       "mamilo": "0",
       "pregas": "0"
     },
-    "expandedZeroOptions": []
+    "input": {
+      "pele": "0",
+      "orelha": "0",
+      "mama": "0",
+      "mamilo": "0",
+      "pregas": "0"
+    },
+    "amendments": [],
+    "expected": {
+      "main": "29s 1d",
+      "raw": {
+        "dias": 204
+      },
+      "level": "mid"
+    },
+    "recordedResult": {
+      "main": [
+        "29s 1d",
+        "de idade gestacional"
+      ],
+      "label": "Idade gestacional pelo método de Capurro somático",
+      "raw": {
+        "soma": 0,
+        "dias": 204
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+    "id": "metodo-de-capurro",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+    "originalInput": {
+      "pele": "10",
+      "orelha": "16",
+      "mama": "10",
+      "mamilo": "10",
+      "pregas": "15"
+    },
     "input": {
       "pele": "10",
       "orelha": "16",
@@ -33,6 +61,7 @@
       "mamilo": "10",
       "pregas": "15"
     },
+    "amendments": [],
     "expected": {
       "main": "37s 6d",
       "raw": {
@@ -41,17 +70,34 @@
       },
       "level": "low"
     },
+    "recordedResult": {
+      "main": [
+        "37s 6d",
+        "de idade gestacional"
+      ],
+      "label": "Idade gestacional pelo método de Capurro somático",
+      "raw": {
+        "soma": 61,
+        "dias": 265
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "metodo-de-capurro",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
     "originalInput": {
       "pele": "10",
-      "orelha": "16",
+      "orelha": "8",
       "mama": "10",
       "mamilo": "10",
       "pregas": "15"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
     "input": {
       "pele": "10",
       "orelha": "8",
@@ -59,6 +105,7 @@
       "mamilo": "10",
       "pregas": "15"
     },
+    "amendments": [],
     "expected": {
       "main": "36s 5d",
       "raw": {
@@ -66,17 +113,34 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "pele": "10",
-      "orelha": "8",
-      "mama": "10",
-      "mamilo": "10",
-      "pregas": "15"
+    "recordedResult": {
+      "main": [
+        "36s 5d",
+        "de idade gestacional"
+      ],
+      "label": "Idade gestacional pelo método de Capurro somático",
+      "raw": {
+        "soma": 53,
+        "dias": 257
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+    "id": "metodo-de-capurro",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+    "originalInput": {
+      "pele": "20",
+      "orelha": "24",
+      "mama": "15",
+      "mamilo": "15",
+      "pregas": "20"
+    },
     "input": {
       "pele": "20",
       "orelha": "24",
@@ -84,6 +148,7 @@
       "mamilo": "15",
       "pregas": "20"
     },
+    "amendments": [],
     "expected": {
       "main": "42s 4d",
       "raw": {
@@ -91,13 +156,20 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "pele": "20",
-      "orelha": "24",
-      "mama": "15",
-      "mamilo": "15",
-      "pregas": "20"
+    "recordedResult": {
+      "main": [
+        "42s 4d",
+        "de idade gestacional"
+      ],
+      "label": "Idade gestacional pelo método de Capurro somático",
+      "raw": {
+        "soma": 94,
+        "dias": 298
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   }
 ]

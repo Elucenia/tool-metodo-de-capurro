@@ -3,12 +3,13 @@
     "id": "metodo-de-capurro",
     "title": "Método de Capurro (somático)",
     "short": "Idade gestacional do recém-nascido",
+    "desc": "Calcule a idade gestacional do recém-nascido pelo método de Capurro somático: textura da pele, orelha, glândula mamária, mamilo e pregas plantares.",
+    "lead": "Estima a idade gestacional do recém-nascido pelo exame físico, quando a datação obstétrica é desconhecida ou duvidosa.",
+    "kind": "Calculadora",
     "spec": [
       "pediatria",
       "ginecologia-e-obstetricia"
     ],
-    "desc": "Calcule a idade gestacional do recém-nascido pelo método de Capurro somático: textura da pele, orelha, glândula mamária, mamilo e pregas plantares.",
-    "lead": "Estima a idade gestacional do recém-nascido pelo exame físico, quando a datação obstétrica é desconhecida ou duvidosa.",
     "fields": [
       [
         "pele",
@@ -58,7 +59,7 @@
           "opts": {
             "0": "Apenas visível, sem aréola",
             "5": "Aréola lisa e chata, diâmetro menor que 7,5 mm",
-            "10": "Aréola pontilhada, borda não elevada, diâmetro menor que 7,5 mm",
+            "10": "Aréola pontilhada, borda não elevada, diâmetro maior que 7,5 mm",
             "15": "Aréola pontilhada, borda elevada, diâmetro maior que 7,5 mm"
           }
         }
@@ -79,34 +80,22 @@
       ]
     ],
     "formula": "<p><strong>Idade gestacional (dias) = 204 + soma dos pontos</strong> dos 5 sinais somáticos. Divida por 7 para obter semanas.</p><p>Capurro também descreveu uma forma somatoneurológica (constante 200, com sinais neurológicos); esta calculadora usa só a forma somática, que não depende do estado neurológico do recém-nascido.</p>",
-    "table": [
-      [
-        "Idade gestacional",
-        "Classificação"
-      ],
-      [
-        "&lt; 37 semanas",
-        "Pré-termo"
-      ],
-      [
-        "37s 0d a 41s 6d",
-        "Termo"
-      ],
-      [
-        "≥ 42 semanas",
-        "Pós-termo"
-      ]
-    ],
-    "tips": [
-      "O método de Capurro perde precisão em prematuros extremos (abaixo de cerca de 29 semanas, que é o mínimo da escala: 204 dias): nesses, prefira o New Ballard.",
-      "Examine nas primeiras horas de vida (idealmente até 48 horas): a pele descama e muda com o tempo, superestimando a idade.",
-      "Recém-nascidos pequenos para a idade gestacional podem ter sinais somáticos mais maduros ou menos maduros que a idade real; desnutrição intrauterina altera mama e pregas.",
-      "A datação obstétrica confiável (ultrassonografia do 1º trimestre) prevalece sobre o exame físico: use o Capurro quando ela não existir."
-    ],
     "sources": [
       [
         "Capurro H et al. A simplified method for diagnosis of gestational age in the newborn infant. J Pediatr, 1978.",
         "https://doi.org/10.1016/S0022-3476(78)80621-0"
+      ],
+      [
+        "Ministério da Saúde,AIDPI neonatal5ªedição,section5.1",
+        "https://bvsms.saude.gov.br/bvs/publicacoes/manual_AIDPI_neonatal_5ed.pdf"
+      ],
+      [
+        "Ministério da Saúde,professional neonatal guidevol1",
+        "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_recem_nascido_%20guia_profissionais_saude_v1.pdf"
+      ],
+      [
+        "Ministério da Saúde. Atenção à saúde do recém-nascido, v1, 2nd updated edition 2014, Quadro 11 PDF173 / printed172; official reproduction, not original1978 paper.",
+        "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_saude_recem_nascido_v1.pdf"
       ]
     ],
     "cases": [
@@ -180,9 +169,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -191,17 +177,674 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:52.415Z",
+      "total": 1600,
+      "passed": 1600,
+      "sourceRowCount": 1600,
+      "uniqueApiInputCount": 1600,
+      "sourceContextCount": 1600,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "055a5c070464f840daa88a115d4d486cc2298af383cff007b44dcf7202d642ed",
+        "total": 1600,
+        "bankRowCount": 1600,
+        "uniqueApiInputCount": 1600,
+        "sourceContextCount": 1600,
+        "fullStoredSourceRows": 1600,
+        "localRejectionContractCount": 0,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/seven-primary-independent-expectations-final35.json",
+            "sha256": "7fc110068db25fd0f4a5d2f53569d24fa93b6fa05ac3486d752814c33204e41e"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+          "sha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation.",
+      "sourceEvidence": {
+        "review": {
+          "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+          "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+        },
+        "reading": {
+          "id": "metodo-de-capurro",
+          "currentMethodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
+          "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/650322/",
+          "recordBinding": {
+            "file": "reports/review-20261003/seven-primary-frozen-inputs-final35/selected-records/metodo-de-capurro.json",
+            "sha256": "eb965f090dd7fdd912a329fa243d1dae05afb84416133b326a19ff2cd39ee5e2"
+          },
+          "adapterBindings": [
+            {
+              "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+              "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+              "bytes": 6020,
+              "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+              "currentSha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+              "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+              "bytes": 6020,
+              "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+              "currentSha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+              "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+              "bytes": 6020,
+              "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+              "currentSha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+            }
+          ],
+          "ownSourceInputs": 1600,
+          "observedAdapterRows": 4800,
+          "sourceIds": [
+            "Capurro1978-official-MS2014-Quadro11"
+          ],
+          "scope": "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation.",
+          "status": "bounded-arithmetic-confirmed; one source-rubric mismatch",
+          "findings": [
+            {
+              "classification": "confirmed-local-label-mismatch-against-official2014-reproduction",
+              "field": "mamilo",
+              "code": "10",
+              "before": "Aréola pontilhada, borda não elevada, diâmetro menor que 7,5 mm",
+              "source": "Diâmetro maior que 7,5 mm. Aréola ponteaguda e borda não elevada",
+              "minimalChange": "Change menor to maior only after source/10-language peer; preserve code 10 and score."
+            }
+          ],
+          "unchecked": [
+            "Original 1978 full paper",
+            "Clinical scoring of physical signs",
+            "Equality at 7.5 mm"
+          ],
+          "clinicalApproval": "not-performed",
+          "professionalTranslationApproval": "not-performed",
+          "rightsApproval": "not-performed",
+          "fullMethodApproval": "not-performed"
+        },
+        "primarySources": []
+      },
+      "evidencePath": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+      "evidenceSha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85",
+      "independentPeer": {
+        "status": "pending-independent-package-peer",
+        "scope": "Western own primary derivation before imports and actual Node/VM/Chromium selected-math evidence; no new independent source rederivation claimed by this packaging preparation."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+          "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+          "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+          "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+        }
+      ],
+      "qualifications": [
+        "Original 1978 full paper",
+        "Clinical scoring of physical signs",
+        "Equality at 7.5 mm",
+        "Source references/edition conflicts and raw parity/display observations preserved; no unscoped outputs or diagnosis/legal/forensic/follow-up decisions approved."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "previousImplementationBindings": [
+        {
+          "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+          "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+          "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+          "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+        }
+      ],
+      "appliedCodeRebind": {
+        "preparedAt": "2026-10-04T22:14:38.093Z",
+        "predecessorBank": {
+          "file": "reports/review-20261003/occupational-obstetric-source-bank-stage-final36-r2/apps/website/private/tool-code/metodo-de-capurro/independent-source-cases.json",
+          "sha256": "fdd83a80993cc5dedaf00834a6877bc3079276b705e0510b8731adfb2d5a4df8"
+        },
+        "reason": "Source field-label metadata-only amendment; old captured implementation hashes/outputs retained verbatim, new full-file hash bound separately.",
+        "scope": "Only declared selected numeric projections; no clinical, rubric, language-rights or full-method approval.",
+        "evidence": [
+          {
+            "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+            "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e"
+          },
+          {
+            "file": "reports/review-20261003/source34-35-36-bank-packaging-root-peer.json",
+            "sha256": "105c058072ec3b7ebf3ccc4b33b81ee909dbc2d7174f48bba2854ff4a1c56675"
+          },
+          {
+            "file": "reports/review-20261003/wai-capurro-independent-review-publication-final36.json",
+            "sha256": "6c1c812d6d287e8d3bca93f7d033e859a451870e64c01b6463c3f679c1f4fa88"
+          },
+          {
+            "file": "reports/review-20261003/source33-documentary-independent-review-publication-final36-r2.json",
+            "sha256": "0de32ed8bb4eaaca7a2e342b9a624604c426fe3010e7f1f5869b10464d7b45e3"
+          },
+          {
+            "file": "reports/review-20261003/henssge-independent-review-publication-final36-r2.json",
+            "sha256": "41adfdd55fe0bc0f57078b007098703815c10216cd824ab1c582d2e9e16fd0b2"
+          },
+          {
+            "file": "reports/review-20261003/henssge-global-independent-review-verify-final36-r2.json",
+            "sha256": "77a3bb5b5dc5a53a03864efd7de03aa1d26682083695ee7377694399eb64acfe"
+          }
+        ]
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
+    "implementationVersion": "metodo-de-capurro@native-2026-10-03+f1ddb0fcf2e4",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/650322/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Idade gestacional (dias) = 204 + soma dos pontos dos 5 sinais somáticos. Divida por 7 para obter semanas. Capurro também descreveu uma forma somatoneurológica (constante 200, com sinais neurológicos); esta calculadora usa só a forma somática, que não depende do estado neurológico do recém-nascido.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "pele",
+            "label": "Textura da pele",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Muito fina, gelatinosa",
+              "5": "Fina e lisa",
+              "10": "Algo mais grossa, discreta descamação superficial",
+              "15": "Grossa, rugas superficiais, descamação nas mãos e nos pés",
+              "20": "Grossa, apergaminhada, com gretas profundas"
+            }
+          },
+          {
+            "key": "orelha",
+            "label": "Forma da orelha",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Chata, disforme, pavilhão não encurvado",
+              "8": "Pavilhão parcialmente encurvado na borda",
+              "16": "Pavilhão parcialmente encurvado em toda a parte superior",
+              "24": "Pavilhão totalmente encurvado"
+            }
+          },
+          {
+            "key": "mama",
+            "label": "Tamanho da glândula mamária",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Não palpável",
+              "5": "Palpável, menor que 5 mm",
+              "10": "Entre 5 e 10 mm",
+              "15": "Maior que 10 mm"
+            }
+          },
+          {
+            "key": "mamilo",
+            "label": "Formação do mamilo",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Apenas visível, sem aréola",
+              "5": "Aréola lisa e chata, diâmetro menor que 7,5 mm",
+              "10": "Aréola pontilhada, borda não elevada, diâmetro maior que 7,5 mm",
+              "15": "Aréola pontilhada, borda elevada, diâmetro maior que 7,5 mm"
+            }
+          },
+          {
+            "key": "pregas",
+            "label": "Pregas plantares",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Sem pregas",
+              "5": "Marcas mal definidas na metade anterior",
+              "10": "Marcas bem definidas na metade anterior e sulcos no terço anterior",
+              "15": "Sulcos na metade anterior",
+              "20": "Sulcos em mais da metade anterior"
+            }
+          }
+        ],
+        "hash": "cce5c19b1d458f81ab187e9d7f6e5c56284133d5d53e49edc563e76c7111ce86"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Capurro H et al. A simplified method for diagnosis of gestational age in the newborn infant. J Pediatr, 1978.",
+          "url": "https://doi.org/10.1016/S0022-3476(78)80621-0",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A simplified method for diagnosis of gestational age in the newborn infant.",
+            "year": "1978",
+            "firstPublicationDate": "1978-07-01",
+            "doi": "10.1016/s0022-3476(78)80621-0",
+            "pmid": "650322",
+            "journal": "The Journal of pediatrics",
+            "authors": "Capurro H, Konichezky S, Fonseca D, Caldeyro-Barcia R."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/650322/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:52.415Z",
+        "total": 1600,
+        "passed": 1600,
+        "sourceRowCount": 1600,
+        "uniqueApiInputCount": 1600,
+        "sourceContextCount": 1600,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "055a5c070464f840daa88a115d4d486cc2298af383cff007b44dcf7202d642ed",
+          "total": 1600,
+          "bankRowCount": 1600,
+          "uniqueApiInputCount": 1600,
+          "sourceContextCount": 1600,
+          "fullStoredSourceRows": 1600,
+          "localRejectionContractCount": 0,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/seven-primary-independent-expectations-final35.json",
+              "sha256": "7fc110068db25fd0f4a5d2f53569d24fa93b6fa05ac3486d752814c33204e41e"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+            "sha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation.",
+        "sourceEvidence": {
+          "review": {
+            "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+            "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+          },
+          "reading": {
+            "id": "metodo-de-capurro",
+            "currentMethodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
+            "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/650322/",
+            "recordBinding": {
+              "file": "reports/review-20261003/seven-primary-frozen-inputs-final35/selected-records/metodo-de-capurro.json",
+              "sha256": "eb965f090dd7fdd912a329fa243d1dae05afb84416133b326a19ff2cd39ee5e2"
+            },
+            "adapterBindings": [
+              {
+                "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+                "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+                "bytes": 6020,
+                "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+                "currentSha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+                "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+                "bytes": 6020,
+                "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+                "currentSha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+                "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+                "bytes": 6020,
+                "frozenFile": "reports/review-20261003/seven-primary-frozen-inputs-final35/apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+                "currentSha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+              }
+            ],
+            "ownSourceInputs": 1600,
+            "observedAdapterRows": 4800,
+            "sourceIds": [
+              "Capurro1978-official-MS2014-Quadro11"
+            ],
+            "scope": "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation.",
+            "status": "bounded-arithmetic-confirmed; one source-rubric mismatch",
+            "findings": [
+              {
+                "classification": "confirmed-local-label-mismatch-against-official2014-reproduction",
+                "field": "mamilo",
+                "code": "10",
+                "before": "Aréola pontilhada, borda não elevada, diâmetro menor que 7,5 mm",
+                "source": "Diâmetro maior que 7,5 mm. Aréola ponteaguda e borda não elevada",
+                "minimalChange": "Change menor to maior only after source/10-language peer; preserve code 10 and score."
+              }
+            ],
+            "unchecked": [
+              "Original 1978 full paper",
+              "Clinical scoring of physical signs",
+              "Equality at 7.5 mm"
+            ],
+            "clinicalApproval": "not-performed",
+            "professionalTranslationApproval": "not-performed",
+            "rightsApproval": "not-performed",
+            "fullMethodApproval": "not-performed"
+          },
+          "primarySources": []
+        },
+        "evidencePath": "reports/review-20261003/seven-primary-independent-source-check-final35.json",
+        "evidenceSha256": "dca93fed75cf2559c3ef39c581218fd9c4e604d0bbbcd787556bc8ef14590e85",
+        "independentPeer": {
+          "status": "pending-independent-package-peer",
+          "scope": "Western own primary derivation before imports and actual Node/VM/Chromium selected-math evidence; no new independent source rederivation claimed by this packaging preparation."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+            "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+            "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+            "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+          }
+        ],
+        "qualifications": [
+          "Original 1978 full paper",
+          "Clinical scoring of physical signs",
+          "Equality at 7.5 mm",
+          "Source references/edition conflicts and raw parity/display observations preserved; no unscoped outputs or diagnosis/legal/forensic/follow-up decisions approved."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "previousImplementationBindings": [
+          {
+            "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+            "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/metodo-de-capurro/calculator.js",
+            "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/metodo-de-capurro/calculator.js",
+            "sha256": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922"
+          }
+        ],
+        "appliedCodeRebind": {
+          "preparedAt": "2026-10-04T22:14:38.093Z",
+          "predecessorBank": {
+            "file": "reports/review-20261003/occupational-obstetric-source-bank-stage-final36-r2/apps/website/private/tool-code/metodo-de-capurro/independent-source-cases.json",
+            "sha256": "fdd83a80993cc5dedaf00834a6877bc3079276b705e0510b8731adfb2d5a4df8"
+          },
+          "reason": "Source field-label metadata-only amendment; old captured implementation hashes/outputs retained verbatim, new full-file hash bound separately.",
+          "scope": "Only declared selected numeric projections; no clinical, rubric, language-rights or full-method approval.",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+              "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e"
+            },
+            {
+              "file": "reports/review-20261003/source34-35-36-bank-packaging-root-peer.json",
+              "sha256": "105c058072ec3b7ebf3ccc4b33b81ee909dbc2d7174f48bba2854ff4a1c56675"
+            },
+            {
+              "file": "reports/review-20261003/wai-capurro-independent-review-publication-final36.json",
+              "sha256": "6c1c812d6d287e8d3bca93f7d033e859a451870e64c01b6463c3f679c1f4fa88"
+            },
+            {
+              "file": "reports/review-20261003/source33-documentary-independent-review-publication-final36-r2.json",
+              "sha256": "0de32ed8bb4eaaca7a2e342b9a624604c426fe3010e7f1f5869b10464d7b45e3"
+            },
+            {
+              "file": "reports/review-20261003/henssge-independent-review-publication-final36-r2.json",
+              "sha256": "41adfdd55fe0bc0f57078b007098703815c10216cd824ab1c582d2e9e16fd0b2"
+            },
+            {
+              "file": "reports/review-20261003/henssge-global-independent-review-verify-final36-r2.json",
+              "sha256": "77a3bb5b5dc5a53a03864efd7de03aa1d26682083695ee7377694399eb64acfe"
+            }
+          ]
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be",
+      "source35Amendment": {
+        "at": "2026-10-04T21:50:29.807Z",
+        "scope": "Official reproduction: nipple-formation option10 greater than7.5mm; label only, assigned code/score unchanged.",
+        "previousMethodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
+        "previousFormula": "<p><strong>Idade gestacional (dias) = 204 + soma dos pontos</strong> dos 5 sinais somáticos. Divida por 7 para obter semanas.</p><p>Capurro também descreveu uma forma somatoneurológica (constante 200, com sinais neurológicos); esta calculadora usa só a forma somática, que não depende do estado neurológico do recém-nascido.</p>",
+        "previousLimits": "Esta ferramenta implementa o Capurro somático, com cinco sinais físicos e constante 204, não a variante somatoneurológica. A orientação neonatal do Ministério da Saúde consultada descreve seu uso em recém-nascidos a partir de 29 semanas, especialmente quando a data menstrual não é conhecida. Não se presume desempenho em prematuros extremos abaixo dessa faixa. Os sinais exigem exame físico apropriado; uma orelha temporariamente achatada pela posição do parto não deve ser usada como se refletisse maturação.",
+        "sourceReview": {
+          "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+          "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+        },
+        "sourceReproduction": {
+          "file": "reports/review-20261003/seven-primary-documents-final35/capurro-ms-newborn-v1.pdf",
+          "sha256": "b75d0251dffce2de3a59455c407f18e8fd060866a07ebc9f5309dfd2ea87d59a"
+        },
+        "sourceReadScope": "Personally viewed official MS2014 Quadro11 PDF173/printed172 and preceding paragraph; original1978 identity only/full article inaccessible.",
+        "originalManualOrPaperFullyRead": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed",
+        "fullMethodConformance": false
+      },
+      "previousImplementationHash": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+      "metadataAmendment": {
+        "at": "2026-10-04T21:50:29.807Z",
+        "edition": "Official MS2014 reproduction, Quadro11; original1978 paper not fully read",
+        "scope": "Option10 metadata only; implementationVersion of arithmetic preserved",
+        "previousImplementationHash": "e033b6e8c865d3e5fc18e4cdcc11b57d5cbb63874deff1667e1fd8adeef07922",
+        "currentImplementationHash": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be",
+        "arithmeticBodySha256": "1ece4d0168bf44d03a75eb6c5a565989744f3f4179f091738b2ee0aa2d5f255d",
+        "arithmeticBodyByteUnchanged": true,
+        "previousInputContract": {
+          "fields": [
+            {
+              "key": "pele",
+              "label": "Textura da pele",
+              "type": "sel",
+              "optional": false,
+              "options": {
+                "0": "Muito fina, gelatinosa",
+                "5": "Fina e lisa",
+                "10": "Algo mais grossa, discreta descamação superficial",
+                "15": "Grossa, rugas superficiais, descamação nas mãos e nos pés",
+                "20": "Grossa, apergaminhada, com gretas profundas"
+              }
+            },
+            {
+              "key": "orelha",
+              "label": "Forma da orelha",
+              "type": "sel",
+              "optional": false,
+              "options": {
+                "0": "Chata, disforme, pavilhão não encurvado",
+                "8": "Pavilhão parcialmente encurvado na borda",
+                "16": "Pavilhão parcialmente encurvado em toda a parte superior",
+                "24": "Pavilhão totalmente encurvado"
+              }
+            },
+            {
+              "key": "mama",
+              "label": "Tamanho da glândula mamária",
+              "type": "sel",
+              "optional": false,
+              "options": {
+                "0": "Não palpável",
+                "5": "Palpável, menor que 5 mm",
+                "10": "Entre 5 e 10 mm",
+                "15": "Maior que 10 mm"
+              }
+            },
+            {
+              "key": "mamilo",
+              "label": "Formação do mamilo",
+              "type": "sel",
+              "optional": false,
+              "options": {
+                "0": "Apenas visível, sem aréola",
+                "5": "Aréola lisa e chata, diâmetro menor que 7,5 mm",
+                "10": "Aréola pontilhada, borda não elevada, diâmetro menor que 7,5 mm",
+                "15": "Aréola pontilhada, borda elevada, diâmetro maior que 7,5 mm"
+              }
+            },
+            {
+              "key": "pregas",
+              "label": "Pregas plantares",
+              "type": "sel",
+              "optional": false,
+              "options": {
+                "0": "Sem pregas",
+                "5": "Marcas mal definidas na metade anterior",
+                "10": "Marcas bem definidas na metade anterior e sulcos no terço anterior",
+                "15": "Sulcos na metade anterior",
+                "20": "Sulcos em mais da metade anterior"
+              }
+            }
+          ],
+          "hash": "6d65e875f54d02e75ffd8115bf324b251efdb0752c0e164450bcc3e33e658cb6"
+        },
+        "sourceReview": {
+          "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+          "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed"
+      },
+      "inputContractHashHistory": [
+        {
+          "hash": "7ae583dde2105fc42ff11b3147bc14d37d30a01328602d49fbff3ca1ea2d8964",
+          "reason": "Exact peer-reviewed source36 formula/field documentary amendment; previous formula/fields/hash retained by owned donor recipes. No undisclosed numeric change.",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/wai-capurro-owned-candidate-final35-r4.json",
+              "sha256": "05f9bd9d400a8685b02ba632acee9e42bfc10ee87d06a89cba0b6beb8980b261"
+            },
+            {
+              "file": "reports/review-20261003/source33-documentary-owned-candidate-r2.json",
+              "sha256": "1663d36b02f2d71e2d4f3935ea12511f3a5da664f08e31cc826eea869e0bafa0"
+            },
+            {
+              "file": "reports/review-20261003/henssge-2024-owned-candidate-final35-r2.json",
+              "sha256": "d30ec0633e7c2f6e7f18a1629167f3968b49e4534e7e3c767e4ad4fc3b0ef38c"
+            }
+          ]
+        }
+      ],
+      "implementationUpdatedAt": "2026-10-05T13:02:54.731Z",
+      "currentImplementationIdentityEvidence": {
+        "file": "reports/review-20261003/current-implementation-identities-application-final45.json",
+        "scope": "Exact current adapter bytes. Method edition, inputs, mathematical expressions, bibliographic checks, source-case history and approval statuses unchanged by this metadata correction."
+      }
+    },
+    "limits": "Esta ferramenta implementa o Capurro somático, com cinco sinais físicos e constante 204, não a variante somatoneurológica. A orientação neonatal do Ministério da Saúde consultada descreve seu uso em recém-nascidos a partir de 29 semanas, especialmente quando a data menstrual não é conhecida. Não se presume desempenho em prematuros extremos abaixo dessa faixa. Os sinais exigem exame físico apropriado; uma orelha temporariamente achatada pela posição do parto não deve ser usada como se refletisse maturação. No Quadro 11 da orientação oficial do Ministério da Saúde, segunda edição atualizada de 2014, a opção de 10 pontos da formação do mamilo descreve diâmetro maior que 7,5 mm e borda não elevada. Esta é uma leitura da reprodução oficial, não uma revisão integral do artigo original de 1978. A correção do rótulo mantém o código e os 10 pontos; não valida o exame físico nem resolve limites de igualdade que a figura não explicita.",
+    "limitsEvidence": {
+      "status": "primary-institutional-indexed-sections-read-full-access-incomplete",
+      "sources": [
+        {
+          "url": "https://bvsms.saude.gov.br/bvs/publicacoes/manual_AIDPI_neonatal_5ed.pdf",
+          "edition": "Ministério da Saúde,AIDPI neonatal5ªedição,section5.1",
+          "readScope": "Primary institutional indexed section:Capurro≥29weeks;somatic5physical versus somatoneurologic4physical+2neurologic. Direct PDF opening timed out."
+        },
+        {
+          "url": "https://bvsms.saude.gov.br/bvs/publicacoes/atencao_recem_nascido_%20guia_profissionais_saude_v1.pdf",
+          "edition": "Ministério da Saúde,professional neonatal guidevol1",
+          "readScope": "Primary indexed section:five physical somatic signs when menstrual dating unknown,29weeks or more. Direct PDF opening timed out."
+        },
+        {
+          "url": "https://doi.org/10.1016/S0022-3476(78)80621-0",
+          "edition": "Capurro1978",
+          "readScope": "Publisher identity only, no original abstract body/full paper."
+        }
+      ],
+      "populationScope": "Newborn somatic assessment from29weeks, according to institutional guidance.",
+      "remainingChecks": [
+        "Original1978 full paper unavailable.",
+        "Institutional primary sections read through indexing; direct PDF timed out.",
+        "No imposed1500g eligibility: not established in primary text read."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
+    },
+    "sourceLimitEvidence": {
+      "source35Amendment": {
+        "at": "2026-10-04T21:50:29.807Z",
+        "scope": "Official reproduction: nipple-formation option10 greater than7.5mm; label only, assigned code/score unchanged.",
+        "previousMethodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
+        "previousFormula": "<p><strong>Idade gestacional (dias) = 204 + soma dos pontos</strong> dos 5 sinais somáticos. Divida por 7 para obter semanas.</p><p>Capurro também descreveu uma forma somatoneurológica (constante 200, com sinais neurológicos); esta calculadora usa só a forma somática, que não depende do estado neurológico do recém-nascido.</p>",
+        "previousLimits": "Esta ferramenta implementa o Capurro somático, com cinco sinais físicos e constante 204, não a variante somatoneurológica. A orientação neonatal do Ministério da Saúde consultada descreve seu uso em recém-nascidos a partir de 29 semanas, especialmente quando a data menstrual não é conhecida. Não se presume desempenho em prematuros extremos abaixo dessa faixa. Os sinais exigem exame físico apropriado; uma orelha temporariamente achatada pela posição do parto não deve ser usada como se refletisse maturação.",
+        "sourceReview": {
+          "file": "reports/review-20261003/seven-primary-source-review-final35.json",
+          "sha256": "030c9299a4eef7b89ff75601532949784448b173e52da8b014b56597b14eef48"
+        },
+        "sourceReproduction": {
+          "file": "reports/review-20261003/seven-primary-documents-final35/capurro-ms-newborn-v1.pdf",
+          "sha256": "b75d0251dffce2de3a59455c407f18e8fd060866a07ebc9f5309dfd2ea87d59a"
+        },
+        "sourceReadScope": "Personally viewed official MS2014 Quadro11 PDF173/printed172 and preceding paragraph; original1978 identity only/full article inaccessible.",
+        "originalManualOrPaperFullyRead": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "rightsApproval": "not-performed",
+        "fullMethodConformance": false
+      }
+    },
+    "implementationUpdatedAt": "2026-10-05T13:02:54.731Z"
+  },
+  "sourceToolSha256": "4cf0b64cda419ca31a7618fa8eb007b206f337070f90084fa70393bca1019be1",
+  "omittedFullReferenceBanks": [
+    {
+      "at": "independentArithmeticTest.cases",
+      "rows": 8,
+      "sha256": "ce39cce13995100f63a5ef7ab881ca95a83ab1b9c4be6bca0598fe2f381bdece",
+      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+    },
+    {
+      "at": "versionEvidence.independentArithmetic.cases",
+      "rows": 8,
+      "sha256": "ce39cce13995100f63a5ef7ab881ca95a83ab1b9c4be6bca0598fe2f381bdece",
+      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
     }
+  ],
+  "currentSource": {
+    "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
+    "bytes": 6020,
+    "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
-  },
-  "clinicalValidation": "not-performed"
+  "clinicalValidation": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

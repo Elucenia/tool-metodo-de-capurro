@@ -1,0 +1,172 @@
+{
+  "completeIndependentBank": {
+    "file": "independent-source-cases.json",
+    "sha256": "055a5c070464f840daa88a115d4d486cc2298af383cff007b44dcf7202d642ed",
+    "bytes": 3226586,
+    "uniqueApiInputs": 1600,
+    "bankRows": 1600,
+    "sourceContextCount": 1600,
+    "scope": "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation.",
+    "clinicalApproval": "not-performed",
+    "professionalLanguageApproval": "not-performed",
+    "sourceRightsApproval": "not-performed",
+    "fullMethodConformance": "not-performed"
+  },
+  "completeIndependentBankExecution": {
+    "id": "metodo-de-capurro",
+    "uniqueApiInputs": 1600,
+    "bankRows": 1600,
+    "executedInputRows": 1600,
+    "checks": 4804,
+    "notExposed": [
+      "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation. No clinical/legal/forensic/rubric/full-method/language/rights approval. Original unscoped edition and display findings retained separately."
+    ],
+    "scope": "All 1600 assigned somatic point combinations, integer days and week/remainder. Official 2014 reproduced rubric, not observation or original 1978 study validation.",
+    "clinicalApproval": "not-performed",
+    "professionalLanguageApproval": "not-performed",
+    "fullMethodConformance": "not-performed",
+    "sourceRightsApproval": "not-performed"
+  },
+  "stage": "prepared-not-published",
+  "id": "metodo-de-capurro",
+  "repository": "Elucenia/tool-metodo-de-capurro",
+  "build": {
+    "id": "6QpMzbnUBE2fep9nyJzTM",
+    "directory": ".next-private-final36",
+    "receiptSha256": "05823c22753741cd9947b8a5edad0c3f232f5cc4e935d1015837524ac6c34d0b"
+  },
+  "baseline": {
+    "parentCommitSha": "7c4aa6aac20fd058a8126c6fafee044951cdf9dd",
+    "baseTreeSha": "06407f5cda7113e0deec610d32afd0a8b84a820e",
+    "indexBlobSha": "9d306a4cb42d61f4240f7beec11638907317ed7f",
+    "protectedFiles": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dd23488be9aaaa2d7d9c2f8926919159100113a9",
+        "size": 1634,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/dd23488be9aaaa2d7d9c2f8926919159100113a9"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "02295a4faa961299a55059e385ab1cdffbf1d5e4",
+        "size": 3301,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/02295a4faa961299a55059e385ab1cdffbf1d5e4"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ba754f4a5a50c30b261b553805d83c72e3f36443",
+        "size": 916,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/ba754f4a5a50c30b261b553805d83c72e3f36443"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0158d1037af9441ca5b30856c47fa91bb4b42685",
+        "size": 1468,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/0158d1037af9441ca5b30856c47fa91bb4b42685"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-metodo-de-capurro/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    }
+  },
+  "methodSourceModules": [
+    "calculator.js"
+  ],
+  "implementationBrowserSha256": "4aa28a3ab1dc71bfc0b1222d494d73b9ea7ca0af542737e00a884a12e9b2310f",
+  "localeDataSha256": "cbc39595e40ec3aeb2624cd74b7255beff8ab63aa7f4a5e615cc51b1cd450804",
+  "originalStyleSha256": "8fd25e9dc1c0980e3b39b2375d36b96276eec3cbc24284cbc3cc01dc00a67a5c",
+  "originalIndexSha256": "17e4dfd382374e59f9fd143c523abc221ff80212468dc349a21c91cd9302f708",
+  "example": {
+    "label": "Current source-owned complete UI/API fixture",
+    "input": {
+      "pele": "0",
+      "orelha": "0",
+      "mama": "0",
+      "mamilo": "0",
+      "pregas": "0"
+    },
+    "expected": {
+      "raw": {
+        "dias": 204
+      },
+      "main": "29s 1d"
+    },
+    "obtained": {
+      "id": "metodo-de-capurro",
+      "main": [
+        "29s 1d",
+        "de idade gestacional"
+      ],
+      "label": "Idade gestacional pelo método de Capurro somático",
+      "raw": {
+        "soma": 0,
+        "dias": 204
+      },
+      "clinicalValidation": "not-performed"
+    },
+    "scope": "Source-owned example Node/browser wiring parity; not a new clinical oracle"
+  },
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed",
+  "documentationLocales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "documentationTemplateSha256": "ae4c41b39ab92a14adbfab83b946751a75c8168b5927e1f808d1c629ec032ea4",
+  "appWrites": false,
+  "externalMutations": false
+}
