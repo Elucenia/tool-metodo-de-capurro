@@ -106,3 +106,47 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Preterm newborn (before 37 weeks)
+
+| Result details | |
+| --- | --- |
+| Sum of points | 0 |
+| Gestational age in days (204 + sum) | 204 |
+
+
+### 2
+
+Early-term newborn (37w 0d to 38w 6d)
+
+| Result details | |
+| --- | --- |
+| Sum of points | 61 |
+| Gestational age in days (204 + sum) | 265 |
+
+
+### 3
+
+Preterm newborn (before 37 weeks)
+
+| Result details | |
+| --- | --- |
+| Sum of points | 53 |
+| Gestational age in days (204 + sum) | 257 |
+
+
+### 4
+
+Post-term newborn (42 weeks or more)
+
+| Result details | |
+| --- | --- |
+| Sum of points | 94 |
+| Gestational age in days (204 + sum) | 298 |
+

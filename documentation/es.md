@@ -106,3 +106,47 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Recién nacido pretérmino (antes de 37 semanas)
+
+| Detalles del resultado | |
+| --- | --- |
+| Suma de los puntos | 0 |
+| Edad gestacional en días (204 + suma) | 204 |
+
+
+### 2
+
+Recién nacido a término temprano (37s 0d a 38s 6d)
+
+| Detalles del resultado | |
+| --- | --- |
+| Suma de los puntos | 61 |
+| Edad gestacional en días (204 + suma) | 265 |
+
+
+### 3
+
+Recién nacido pretérmino (antes de 37 semanas)
+
+| Detalles del resultado | |
+| --- | --- |
+| Suma de los puntos | 53 |
+| Edad gestacional en días (204 + suma) | 257 |
+
+
+### 4
+
+Recién nacido postérmino (42 semanas o más)
+
+| Detalles del resultado | |
+| --- | --- |
+| Suma de los puntos | 94 |
+| Edad gestacional en días (204 + suma) | 298 |
+

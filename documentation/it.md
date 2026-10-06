@@ -106,3 +106,47 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Neonato pretermine (prima di 37 settimane)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Somma dei punti | 0 |
+| Età gestazionale in giorni (204 + somma) | 204 |
+
+
+### 2
+
+Neonato a termine precoce (37 s 0 g a 38 s 6 g)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Somma dei punti | 61 |
+| Età gestazionale in giorni (204 + somma) | 265 |
+
+
+### 3
+
+Neonato pretermine (prima di 37 settimane)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Somma dei punti | 53 |
+| Età gestazionale in giorni (204 + somma) | 257 |
+
+
+### 4
+
+Neonato post-termine (42 settimane o più)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Somma dei punti | 94 |
+| Età gestazionale in giorni (204 + somma) | 298 |
+

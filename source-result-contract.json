@@ -1,0 +1,285 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "metodo-de-capurro",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "555dece9d71a7a09b288c8d00befe59a9b798afb",
+    "oldEngineSha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be",
+    "currentEngineSha256": "c007b193a00b2409e8951062b28261f2c83806a1db4bb59a3f9e616a3b5b4150"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+      "input": {
+        "pele": "0",
+        "orelha": "0",
+        "mama": "0",
+        "mamilo": "0",
+        "pregas": "0"
+      },
+      "publicOutput": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "29s 1d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 0,
+          "dias": 204
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "29s 1d",
+        "raw": {
+          "dias": 204
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "29s 1d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "level": "mid",
+        "verdict": "Recém-nascido pré-termo (antes de 37 semanas)",
+        "rows": [
+          [
+            "Soma dos pontos",
+            "0"
+          ],
+          [
+            "Idade gestacional em dias (204 + soma)",
+            "204"
+          ]
+        ],
+        "raw": {
+          "soma": 0,
+          "dias": 204
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+      "input": {
+        "pele": "10",
+        "orelha": "16",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "publicOutput": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "37s 6d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "37s 6d",
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "37s 6d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "level": "low",
+        "verdict": "Recém-nascido termo precoce (37s 0d a 38s 6d)",
+        "rows": [
+          [
+            "Soma dos pontos",
+            "61"
+          ],
+          [
+            "Idade gestacional em dias (204 + soma)",
+            "265"
+          ]
+        ],
+        "raw": {
+          "soma": 61,
+          "dias": 265
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+      "input": {
+        "pele": "10",
+        "orelha": "8",
+        "mama": "10",
+        "mamilo": "10",
+        "pregas": "15"
+      },
+      "publicOutput": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "36s 5d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 53,
+          "dias": 257
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "36s 5d",
+        "raw": {
+          "dias": 257
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "36s 5d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "level": "mid",
+        "verdict": "Recém-nascido pré-termo (antes de 37 semanas)",
+        "rows": [
+          [
+            "Soma dos pontos",
+            "53"
+          ],
+          [
+            "Idade gestacional em dias (204 + soma)",
+            "257"
+          ]
+        ],
+        "raw": {
+          "soma": 53,
+          "dias": 257
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+      "input": {
+        "pele": "20",
+        "orelha": "24",
+        "mama": "15",
+        "mamilo": "15",
+        "pregas": "20"
+      },
+      "publicOutput": {
+        "id": "metodo-de-capurro",
+        "main": [
+          "42s 4d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "raw": {
+          "soma": 94,
+          "dias": 298
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "42s 4d",
+        "raw": {
+          "dias": 298
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "42s 4d",
+          "de idade gestacional"
+        ],
+        "label": "Idade gestacional pelo método de Capurro somático",
+        "level": "mid",
+        "verdict": "Recém-nascido pós-termo (42 semanas ou mais)",
+        "rows": [
+          [
+            "Soma dos pontos",
+            "94"
+          ],
+          [
+            "Idade gestacional em dias (204 + soma)",
+            "298"
+          ]
+        ],
+        "raw": {
+          "soma": 94,
+          "dias": 298
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

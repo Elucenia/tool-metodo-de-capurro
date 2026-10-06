@@ -355,7 +355,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Capurro 1978 somático 5 sinais:204+pontos; sem Capurrosomatoneurológico 200+pontos",
-    "implementationVersion": "metodo-de-capurro@native-2026-10-03+f1ddb0fcf2e4",
+    "implementationVersion": "metodo-de-capurro@native-2026-10-05+c007b193a00b",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/650322/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -636,7 +636,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be",
+      "implementationHash": "c007b193a00b2409e8951062b28261f2c83806a1db4bb59a3f9e616a3b5b4150",
       "source35Amendment": {
         "at": "2026-10-04T21:50:29.807Z",
         "scope": "Official reproduction: nipple-formation option10 greater than7.5mm; label only, assigned code/score unchanged.",
@@ -766,7 +766,35 @@
       "currentImplementationIdentityEvidence": {
         "file": "reports/review-20261003/current-implementation-identities-application-final45.json",
         "scope": "Exact current adapter bytes. Method edition, inputs, mathematical expressions, bibliographic checks, source-case history and approval statuses unchanged by this metadata correction."
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "metodo-de-capurro@native-2026-10-03+f1ddb0fcf2e4",
+          "previousImplementationHash": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be",
+          "implementationHash": "c007b193a00b2409e8951062b28261f2c83806a1db4bb59a3f9e616a3b5b4150",
+          "scientificBodySha256": "9d7f89269e90f3e353a9ac85d913240944f35733a06eeb6c58e41d90fd1df853",
+          "metadataContractHash": "cce5c19b1d458f81ab187e9d7f6e5c56284133d5d53e49edc563e76c7111ce86",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Esta ferramenta implementa o Capurro somático, com cinco sinais físicos e constante 204, não a variante somatoneurológica. A orientação neonatal do Ministério da Saúde consultada descreve seu uso em recém-nascidos a partir de 29 semanas, especialmente quando a data menstrual não é conhecida. Não se presume desempenho em prematuros extremos abaixo dessa faixa. Os sinais exigem exame físico apropriado; uma orelha temporariamente achatada pela posição do parto não deve ser usada como se refletisse maturação. No Quadro 11 da orientação oficial do Ministério da Saúde, segunda edição atualizada de 2014, a opção de 10 pontos da formação do mamilo descreve diâmetro maior que 7,5 mm e borda não elevada. Esta é uma leitura da reprodução oficial, não uma revisão integral do artigo original de 1978. A correção do rótulo mantém o código e os 10 pontos; não valida o exame físico nem resolve limites de igualdade que a figura não explicita.",
     "limitsEvidence": {
@@ -824,25 +852,23 @@
     },
     "implementationUpdatedAt": "2026-10-05T13:02:54.731Z"
   },
-  "sourceToolSha256": "4cf0b64cda419ca31a7618fa8eb007b206f337070f90084fa70393bca1019be1",
+  "sourceToolSha256": "335f69b81d5f0e3f759beb96ba08c799e0a991cc48c8f1866b8892462e4558fd",
   "omittedFullReferenceBanks": [
     {
-      "at": "independentArithmeticTest.cases",
       "rows": 8,
       "sha256": "ce39cce13995100f63a5ef7ab881ca95a83ab1b9c4be6bca0598fe2f381bdece",
-      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
-      "at": "versionEvidence.independentArithmetic.cases",
       "rows": 8,
       "sha256": "ce39cce13995100f63a5ef7ab881ca95a83ab1b9c4be6bca0598fe2f381bdece",
-      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "currentSource": {
     "file": "apps/website/private/tool-code/metodo-de-capurro/calculator.js",
-    "bytes": 6020,
-    "sha256": "f1ddb0fcf2e44861c5de5fd7591a8683dba318900f3b2cb9681974f6a8d719be"
+    "bytes": 6225,
+    "sha256": "c007b193a00b2409e8951062b28261f2c83806a1db4bb59a3f9e616a3b5b4150"
   },
   "clinicalValidation": "not-performed",
   "professionalLanguageReview": "not-performed",

@@ -1,0 +1,1803 @@
+{
+  "id": "metodo-de-capurro",
+  "implementationVersion": "metodo-de-capurro@native-2026-10-05+c007b193a00b",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma dos pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade gestacional em dias (204 + soma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "204",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recém-nascido pré-termo (antes de 37 semanas)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma dos pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "61",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade gestacional em dias (204 + soma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "265",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recém-nascido termo precoce (37s 0d a 38s 6d)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma dos pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "53",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade gestacional em dias (204 + soma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "257",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recém-nascido pré-termo (antes de 37 semanas)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Soma dos pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "94",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade gestacional em dias (204 + soma)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "298",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recém-nascido pós-termo (42 semanas ou mais)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of points",
+                "locale": "en",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestational age in days (204 + sum)",
+                "locale": "en",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Preterm newborn (before 37 weeks)",
+            "locale": "en",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of points",
+                "locale": "en",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestational age in days (204 + sum)",
+                "locale": "en",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Early-term newborn (37w 0d to 38w 6d)",
+            "locale": "en",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of points",
+                "locale": "en",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestational age in days (204 + sum)",
+                "locale": "en",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Preterm newborn (before 37 weeks)",
+            "locale": "en",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sum of points",
+                "locale": "en",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestational age in days (204 + sum)",
+                "locale": "en",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "en",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Post-term newborn (42 weeks or more)",
+            "locale": "en",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma de los puntos",
+                "locale": "es",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad gestacional en días (204 + suma)",
+                "locale": "es",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recién nacido pretérmino (antes de 37 semanas)",
+            "locale": "es",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma de los puntos",
+                "locale": "es",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad gestacional en días (204 + suma)",
+                "locale": "es",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recién nacido a término temprano (37s 0d a 38s 6d)",
+            "locale": "es",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma de los puntos",
+                "locale": "es",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad gestacional en días (204 + suma)",
+                "locale": "es",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recién nacido pretérmino (antes de 37 semanas)",
+            "locale": "es",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Suma de los puntos",
+                "locale": "es",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad gestacional en días (204 + suma)",
+                "locale": "es",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "es",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Recién nacido postérmino (42 semanas o más)",
+            "locale": "es",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme des points",
+                "locale": "fr",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge gestationnel en jours (204 + somme)",
+                "locale": "fr",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nouveau-né prématuré (avant 37 semaines)",
+            "locale": "fr",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme des points",
+                "locale": "fr",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge gestationnel en jours (204 + somme)",
+                "locale": "fr",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nouveau-né à terme précoce (37 SA 0 j à 38 SA 6 j)",
+            "locale": "fr",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme des points",
+                "locale": "fr",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge gestationnel en jours (204 + somme)",
+                "locale": "fr",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nouveau-né prématuré (avant 37 semaines)",
+            "locale": "fr",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somme des points",
+                "locale": "fr",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge gestationnel en jours (204 + somme)",
+                "locale": "fr",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "fr",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Nouveau-né post-terme (42 semaines ou plus)",
+            "locale": "fr",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summe der Punkte",
+                "locale": "de",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestationsalter in Tagen (204 + Summe)",
+                "locale": "de",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frühgeborenes Neugeborenes (vor 37 Wochen)",
+            "locale": "de",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summe der Punkte",
+                "locale": "de",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestationsalter in Tagen (204 + Summe)",
+                "locale": "de",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neugeborenes im frühen Termingeburtsalter (37 SSW 0 T bis 38 SSW 6 T)",
+            "locale": "de",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summe der Punkte",
+                "locale": "de",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestationsalter in Tagen (204 + Summe)",
+                "locale": "de",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Frühgeborenes Neugeborenes (vor 37 Wochen)",
+            "locale": "de",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Summe der Punkte",
+                "locale": "de",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gestationsalter in Tagen (204 + Summe)",
+                "locale": "de",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "de",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Übertragenes Neugeborenes (42 Wochen oder mehr)",
+            "locale": "de",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma dei punti",
+                "locale": "it",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età gestazionale in giorni (204 + somma)",
+                "locale": "it",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neonato pretermine (prima di 37 settimane)",
+            "locale": "it",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma dei punti",
+                "locale": "it",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età gestazionale in giorni (204 + somma)",
+                "locale": "it",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neonato a termine precoce (37 s 0 g a 38 s 6 g)",
+            "locale": "it",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma dei punti",
+                "locale": "it",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età gestazionale in giorni (204 + somma)",
+                "locale": "it",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neonato pretermine (prima di 37 settimane)",
+            "locale": "it",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Somma dei punti",
+                "locale": "it",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età gestazionale in giorni (204 + somma)",
+                "locale": "it",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "it",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Neonato post-termine (42 settimane o più)",
+            "locale": "it",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مجموع النقاط",
+                "locale": "ar",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "٠",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر الحملي بالأيام (204 + المجموع)",
+                "locale": "ar",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "٢٠٤",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حديث ولادة خديج (قبل 37 أسبوعًا)",
+            "locale": "ar",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مجموع النقاط",
+                "locale": "ar",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "٦١",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر الحملي بالأيام (204 + المجموع)",
+                "locale": "ar",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "٢٦٥",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حديث ولادة مكتمل الحمل مبكرًا (37 أسبوعًا 0 يومًا إلى 38 أسبوعًا 6 أيام)",
+            "locale": "ar",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مجموع النقاط",
+                "locale": "ar",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "٥٣",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر الحملي بالأيام (204 + المجموع)",
+                "locale": "ar",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "٢٥٧",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حديث ولادة خديج (قبل 37 أسبوعًا)",
+            "locale": "ar",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "مجموع النقاط",
+                "locale": "ar",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "٩٤",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر الحملي بالأيام (204 + المجموع)",
+                "locale": "ar",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "٢٩٨",
+                "locale": "ar",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "حديث ولادة ما بعد الأجل (42 أسبوعًا أو أكثر)",
+            "locale": "ar",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "得分总和",
+                "locale": "zh",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "孕周（天）（204 + 总分）",
+                "locale": "zh",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早产新生儿（37周前）",
+            "locale": "zh",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "得分总和",
+                "locale": "zh",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "孕周（天）（204 + 总分）",
+                "locale": "zh",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早期足月新生儿（37周0天至38周6天）",
+            "locale": "zh",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "得分总和",
+                "locale": "zh",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "孕周（天）（204 + 总分）",
+                "locale": "zh",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早产新生儿（37周前）",
+            "locale": "zh",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "得分总和",
+                "locale": "zh",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "孕周（天）（204 + 总分）",
+                "locale": "zh",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "zh",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "过期产新生儿（42周或以上）",
+            "locale": "zh",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "点数の合計",
+                "locale": "ja",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "在胎日数（204 + 合計）",
+                "locale": "ja",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早産児（37週未満）",
+            "locale": "ja",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "点数の合計",
+                "locale": "ja",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "在胎日数（204 + 合計）",
+                "locale": "ja",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早期正期産新生児（37週0日～38週6日）",
+            "locale": "ja",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "点数の合計",
+                "locale": "ja",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "在胎日数（204 + 合計）",
+                "locale": "ja",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "早産児（37週未満）",
+            "locale": "ja",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "点数の合計",
+                "locale": "ja",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "在胎日数（204 + 合計）",
+                "locale": "ja",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "ja",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "過期産新生児（42週以上）",
+            "locale": "ja",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Todos os sinais com 0 ponto: 204 dias = 29s 1d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अंकों का योग",
+                "locale": "hi",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "0",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "गर्भकालीन आयु दिनों में (204 + योग)",
+                "locale": "hi",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "204",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  204
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अपरिपक्व नवजात (37 सप्ताह से पहले)",
+            "locale": "hi",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 16, mama 10, mamilo 10, pregas 15: 204 + 61 = 265 dias = 37s 6d (termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अंकों का योग",
+                "locale": "hi",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "61",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  61
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "गर्भकालीन आयु दिनों में (204 + योग)",
+                "locale": "hi",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "265",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  265
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "प्रारंभिक पूर्णकालिक नवजात (37 सप्ताह 0 दिन से 38 सप्ताह 6 दिन)",
+            "locale": "hi",
+            "template": "documented-authored-909043b238a3cabc755c"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Pele 10, orelha 8, mama 10, mamilo 10, pregas 15: 204 + 53 = 257 dias = 36s 5d (pré-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अंकों का योग",
+                "locale": "hi",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "53",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  53
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "गर्भकालीन आयु दिनों में (204 + योग)",
+                "locale": "hi",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "257",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  257
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अपरिपक्व नवजात (37 सप्ताह से पहले)",
+            "locale": "hi",
+            "template": "documented-authored-4aec1e0c95e881bfda7b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos no máximo: 204 + 94 = 298 dias = 42s 4d (pós-termo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अंकों का योग",
+                "locale": "hi",
+                "template": "documented-authored-4e21c830b2b329fc4bfb"
+              },
+              "value": {
+                "text": "94",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  94
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "गर्भकालीन आयु दिनों में (204 + योग)",
+                "locale": "hi",
+                "template": "documented-authored-a41390fd99bce5de4b68"
+              },
+              "value": {
+                "text": "298",
+                "locale": "hi",
+                "template": "documented-authored-8ad9319af873a706cea1",
+                "sourceNumbers": [
+                  298
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "पोस्ट-टर्म नवजात (42 सप्ताह या अधिक)",
+            "locale": "hi",
+            "template": "documented-authored-612022a53dd3e148b803"
+          },
+          "level": "mid"
+        }
+      }
+    ]
+  }
+}

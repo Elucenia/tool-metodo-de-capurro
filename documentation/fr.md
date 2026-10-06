@@ -106,3 +106,47 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Nouveau-né prématuré (avant 37 semaines)
+
+| Détails du résultat | |
+| --- | --- |
+| Somme des points | 0 |
+| Âge gestationnel en jours (204 + somme) | 204 |
+
+
+### 2
+
+Nouveau-né à terme précoce (37 SA 0 j à 38 SA 6 j)
+
+| Détails du résultat | |
+| --- | --- |
+| Somme des points | 61 |
+| Âge gestationnel en jours (204 + somme) | 265 |
+
+
+### 3
+
+Nouveau-né prématuré (avant 37 semaines)
+
+| Détails du résultat | |
+| --- | --- |
+| Somme des points | 53 |
+| Âge gestationnel en jours (204 + somme) | 257 |
+
+
+### 4
+
+Nouveau-né post-terme (42 semaines ou plus)
+
+| Détails du résultat | |
+| --- | --- |
+| Somme des points | 94 |
+| Âge gestationnel en jours (204 + somme) | 298 |
+

@@ -106,3 +106,47 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Recém-nascido pré-termo (antes de 37 semanas)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma dos pontos | 0 |
+| Idade gestacional em dias (204 + soma) | 204 |
+
+
+### 2
+
+Recém-nascido termo precoce (37s 0d a 38s 6d)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma dos pontos | 61 |
+| Idade gestacional em dias (204 + soma) | 265 |
+
+
+### 3
+
+Recém-nascido pré-termo (antes de 37 semanas)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma dos pontos | 53 |
+| Idade gestacional em dias (204 + soma) | 257 |
+
+
+### 4
+
+Recém-nascido pós-termo (42 semanas ou mais)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Soma dos pontos | 94 |
+| Idade gestacional em dias (204 + soma) | 298 |
+

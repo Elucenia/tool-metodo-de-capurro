@@ -106,3 +106,47 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Frühgeborenes Neugeborenes (vor 37 Wochen)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Summe der Punkte | 0 |
+| Gestationsalter in Tagen (204 + Summe) | 204 |
+
+
+### 2
+
+Neugeborenes im frühen Termingeburtsalter (37 SSW 0 T bis 38 SSW 6 T)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Summe der Punkte | 61 |
+| Gestationsalter in Tagen (204 + Summe) | 265 |
+
+
+### 3
+
+Frühgeborenes Neugeborenes (vor 37 Wochen)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Summe der Punkte | 53 |
+| Gestationsalter in Tagen (204 + Summe) | 257 |
+
+
+### 4
+
+Übertragenes Neugeborenes (42 Wochen oder mehr)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Summe der Punkte | 94 |
+| Gestationsalter in Tagen (204 + Summe) | 298 |
+
